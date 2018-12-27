@@ -12,6 +12,7 @@ export default function(state = null, action) {
     case 'BOOK_SELECTED':
       return action.payload;
   }
-
-  return state
+  // If the action isn't of the type BOOK_SELECTED, just return the
+  // unchanged state.
+  return state;
 }
