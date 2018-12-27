@@ -13,6 +13,6 @@ export default function(state = null, action) {
       return action.payload;
   }
   // If the action isn't of the type BOOK_SELECTED, just return the
-  // unchanged state.
+  // unchanged state...which will be null.
   return state;
 }
